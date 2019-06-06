@@ -15,6 +15,7 @@ let handler = function (err) {
     fs.readFile('static/index.html','utf-8', callback)
 }
 }
+
 fs.access('static/index.html', fs.constants.F_OK, handler)
 
 
